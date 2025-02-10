@@ -1,1 +1,452 @@
-#
+# Machine Learning
+## Fundamentals of Machine Learning
+### Overview of Machine Learning
+### Brief History and Evolution
+### Categories of Machine Learning
+- Supervised Learning
+  - Definition and Concept
+  - How It Works?
+  - Types of Supervised Learning
+    - Regression Algorithms
+      - Linear Regression
+      - Polynomial Regression
+      - Ridge and Lasso Regression (Regularized Linear Models)
+      - Support Vector Regression
+      - Decision Tree Regression
+      - Random Forest Regression
+      - K-Nearest Neighbors (KNN) Regression
+      - Gradient Boosting Machine (GBM) and XGBoost
+    - Classification Algorithms
+      - Logistic Regression
+      - Decision Tree Classification
+      - Random Forest Classification
+      - Support Vector Machine (SVM)
+      - K-Nearest Neighbors (KNN) Classification
+      - Naïve Bayes Classification
+      - Neural Networks (Multilayer Perceptron)
+      - Gradient Boosting and XGBoost (for Classification)
+      - AdaBoost
+    - Ensemble Learning
+      - Bagging (Bootstrap Aggregating)
+      - Boosting
+      - Stacking (Stacked Generalization)
+      - Voting and Averaging
+    - Stochastic Gradient Descent (SGD)
+  - Mathematical Foundation of Supervised Learning
+    - Core Principles
+      - Statistical Learning Theory
+      - Probability Theory and Bayes’ Rule
+      - Optimization Techniques
+      - Linear Algebra Foundations
+    - Key Math Tools and Equations
+      - Loss Functions and Cost Functions
+      - Overfitting, Regularization, and Complexity Control
+      - Bias-Variance Trade-off
+- Unsupervised Learning
+  - Definition and Concept
+  - How It works?
+  - Types of Unsupervised Learning
+    - Clustering Algorithms
+      - K-Means Clustering
+      - Hierarchical Clustering
+      - DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+    - Dimensionality Reduction Algorithms
+      - Principal Component Analysis (PCA)
+      - Singular Value Decomposition (SVD)
+      - t-SNE (t-Distributed Stochastic Neighbor Embedding)
+  - Mathematical Foundations
+    - Distance Metrics
+    - Eigenvalues and Eigenvectors
+    - Probability Distribution (Density-based)
+- Reinforcement Learning
+  - Definition and Concept
+  - How It Works?
+  - Types of Reinforcement Learning
+    - Model-Free vs Model-Based
+      - Model-Free
+        - Value-Based Methods
+          - Q-Learning
+          - SARSA (State-Action-Reward-State-Action)
+        - Policy-Based Methods
+          - REINFORCE (Monte Carlo Policy Gradient)
+        - Actor-Critic Methods
+          - Advantage Actor-Critic (A2C)
+          - Asynchronous Advantage Actor-Critic (A3C)
+          - Deep Deterministic Policy Gradient (DDPG)
+          - Proximal Policy Optimization (PPO)
+      - Model-Based
+        - Planning-Based Methods
+          - Model Predictive Control MPC)
+          - Monte Carlo Tree Search (MCTS)
+        - Hybrid Methods
+          - Dyna-Q
+          - Model-Augmented Actor-Critic (MAAC)
+    - On-Policy vs Off-Policy
+      - On-Policy
+        - SARSA (State-Action-Reward-State-Action)
+      - Off-Policy
+        - Q-Learning
+    - Deterministic vs Stochastic Policies
+      - Deterministic Policies
+        - Deep Deterministic Policy Gradient (DDPG)
+      - Stochastic Policies
+        - REINFORCE (Monte Carlo Policy Gradient)
+ - Mathematical Foundations
+   - Markov Decision Process (MDP)
+   - Q-Function and Bellman Equation
+   - Policy Gradient
+### Key Concepts
+- Features and Labels
+- Models
+- Training and Testing
+
+## Feature Engineering
+- Definition and Purpose
+- Types of Features
+  - Numerical Features
+  - Categorical Features
+  - Ordinal Features
+  - Text-Based Features
+- Techniques in Feature Engineering
+  - Feature Transformation
+    - Scaling
+      - Standardization
+      - Min-Max Scaling
+      - Robust Scaling
+    - Normalization
+      - L2 Normalization
+    - Encoding Categorical Variables
+      - One-Hot Encoding
+      - Frequency Encoding
+      - Target Encoding
+    - Binning (Discretization)
+      - Equal Width Binning
+      - Equal Frequency Binning
+      - Custom Binning
+  - Feature Extraction
+    - Text-Based Feature Extraction
+      - Bag-of-Words (BoW)
+      - TF-IDF (Term Frequency-Inverse Document Frequency)
+      - Word Embeddings
+    - Image-Based Feature Extraction
+      - SIFT (Scale-Invariant Feature Transform)
+      - Convolutional Neural Networks (CNNs)
+    - Dimensionality Reduction Techniques
+      - Principal Component Analysis (PCA)
+      - t-SNE (t-Distributed Stochastic Neighbor Embedding)
+      - Autoencoders
+  - Feature Creation (Feature Construction)
+    - Polynomial Features and Interactions
+      - Polynomial Features
+      - Interactions Features
+    - Domain-Specific Transformations
+      - Time-Based Transformations
+      - Logarithmic or Exponential Transformations
+      - Categorical Encoding
+    - Aggregation
+      - Mean Aggregation
+      - Summation
+      - Time Window Aggregation
+  - Feature Selection
+    - Filter Methods
+      - Statistical Tests
+      - Mutual Information
+    - Wrapper Methods
+      - Forward and Backward Selection
+      - Recursive Feature Elimination (RFE)
+    - Embedded Methods
+      - Regularization
+      - Tree-Based Feature Importance
+- Mathematical Foundations
+  - Transformations
+    - Normalization and Standardization
+    - Log Transformation
+    - Box-Cox and Yeo-Johnson Transformations
+  - Dimensionality Reduction Techniques
+    - PCA
+    - Linear Discriminant Analysis (LDA)
+    - t-SNE
+  - Encoding Schemes
+    - One-Hot Encoding
+    - Target Encoding
+    - Binary Encoding
+  - Statistical Methods
+    - Correlation Analysis
+    - Hypothesis Testing
+    - Entropy and Mutual Information
+  - Feature Construction and Interaction Terms
+    - Polynomial Features
+    - Domain-Specific Transformations
+
+## Model Evaluation and Tuning
+- Evaluation Metrics
+  - For Classification Task
+    - Accuracy
+    - Precision
+    - Recall (Sensitivity)
+    - F1 Score
+    - ROC-AUC Score
+  - For Regression Tasks
+    - Mean Absolute Error (MEA)
+    - Mean Squared Error (MSE)
+    - R-Squared (R2)
+- Cross-Validation Techniques
+  - K-Fold Cross-Validation
+  - Stratified K-Fold Cross-Validation
+  - Leave-One-Out Cross-Validation (LOOCV)
+  - Hold out Method (Simple Train/Test Split)
+  - Time-Series Cross-Validation (Rolling/Expanding Window)
+- Hyperparameter Tuning
+  - Grid Search
+  - Random Search
+  - Bayesian Optimization
+  - Gradient-Based Optimization
+  - Evolutionary Algorithms
+- Model Selection
+  - Manual Selection
+  - Automated Machine Learning (AutoML)
+  - Cross-Validation
+  - Information Criterion Methods
+  - Regularization Paths
+  - Ensemble Methods
+- Bias-Variance Tradeoff
+  - Visual Representation
+- Overfitting and Underfitting
+  - Visual Representation
+  - Causes
+  - Strategies to Avoid Overfitting and Underfitting
+
+## Neural Networks
+- Definition and Concept
+- Types of Neural Networks
+  - Feedforward Neural Networks (FNN)
+  - Convolutional Neural Networks (CNN)
+  - Recurrent Neural Networks (RNN)
+    - Vanilla RNN
+    - Long Short-Term Memory (LSTM)
+    - Gated Recurrent Unit (GTU)
+    - Bidirectional RNN
+  - Generative Adversarial Networks (GNN)
+  - Autoencoders (AE)
+    - Sparse Autoencoders
+    - Denoising Autoencoders
+    - Variational Autoencoders (VAE)
+  - Transformer Networks
+  - Radial Basis Function Networks (RBFN)
+  - Spiking Neural Networks (SNN)
+- Components of Neural Networks
+  - Neurons
+  - Layers
+  - Weights
+  - Biases
+  - Activation Functions
+  - Loss Functions
+  - Optimizers
+  - Forward and Backward Propagation
+- Mathematical Foundations of Neural Networks
+  - Linear Algebra
+  - Calculus
+  - Probability and Statistics
+  - Optimization
+  - Representation Learning
+- Training Neural Networks
+  - Initialization
+  - Forward Propagation
+  - Loss Computation
+  - Backward Propagation
+  - Parameter Updates
+  - Stopping Criteria
+- Advanced Topics in Neural Networks
+  - Regularization in Neural Networks
+  - Optimization Techniques
+  - Transfer Learning
+  - Advanced Architectures
+  - Neural Networks Compression
+  - Explainable AI (XAI) in Neural Networks
+  - Neural Architecture Search (NAS)
+ 
+## Regularization Techniques in ML/DL
+- Definition and Concept
+- Types of Regularization Techniques
+  - L1 Regularization (Lasso Regression)
+  - L2 Regularization (Ridge Regression)
+  - Elastic Net Regularization
+  - Dropout (for Neural Networks)
+  - Batch Normalization (Implicit Regularization)
+  - Data Augmentation (Implicit Regularization)
+- Comparison of Regularization Techniques
+  - L1 and L2 Regularization
+  - Elastic Net and L1/L2 Regularization
+  - Dropout and Batch Normalization
+  - Regularization and Data Augmentation
+ 
+## Advanced Deep Learning Architectures
+- Convolutional Neural Networks (CNN)
+- Recurrent Neural Networks (RNN)
+  - Long Short-Term Memory (LSTM)
+  - Gated Recurrent Unit (GTU)
+  - Bidirectional RNN (BiRNN)
+  - Attention Mechanisms and RNNs
+- Generative Adversarial Networks (GAN)
+  - Conditional GAN (cGAN)
+  - Deep Convolutional GAN (DCGAN)
+  - CycleGAN
+  - Wasserstein GAN (WGAN)
+- Transformers and Attention Mechanism
+  - BERT (Bidirectional Encoder Representation from Transformers)
+  - GPT (Generative Pre-Trained Transformer)
+  - Vision Transformers (ViT)
+  - T5 (Text-to-Text Transfer Transformer)
+- Autoencoders and Variational Autoencoders (VAE)
+- Graph Neural Networks
+  - Graph Convolutional Networks (GCN)
+  - Graph Attention Networks (GAT)
+  - Graph Isomorphism Networks (GIN)
+  - Message Passing Neural Networks (MPNN)
+- Advanced Architecture Techniques
+  - Residual Networks
+  - Inception Networks
+  - Capsule Networks
+  - Reinforcement Learning Integration
+  - Deep Q-Networks (DQN)
+  - AlphaGo-Style
+
+## Transfer Learning and Fune-Tuning
+- Definition and Concept
+- How Transfer Learning Works?
+  - Pre-Trained Model Development
+  - Knowledge Transfer
+  - Adapting the Model for the Target Task
+  - Training Strategy
+  - Evaluation and Refinement
+- How Fine-Tuning Works?
+  - Pre-Trained Model Initialization
+  - Adding Task-Specific Layers
+  - Freezing Layers (Optional)
+  - Fine-Tuning Process
+  - Domain-Specific Adjustments
+  - Evaluation and Refinement
+ 
+## Advanced Optimization Techniques
+- Gradient Descent Variants
+  - Momentum-Based Gradient Descent
+  - Nesterov Accelerated Gradient (NAG)
+  - Adagrad (Adaptive Gradient Algorithm)
+  - Adadelta
+  - RMSProp (Root Mean Square Propagation)
+  - Adam (Adaptive Moment Estimation)
+- Second-Order Optimization Methods
+  - Quasi-Newton Methods
+  - Gauss-Newton Method
+  - Conjugate Gradient Method
+- Optimization in Non-Convex Landscapes
+  - Gradient Descent Variants
+  - Second-Order Approximations
+  - Random Restarts
+  - Regularization Techniques
+  - Advanced Optimization Strategies
+- Adaptive Learning Rate Techniques
+  - Adagrad (Adaptive Gradient Algorithm)
+  - RMSProp (Root Mean Square Propagation)
+  - Adam (Adaptive Moment Estimation)
+  - Nadam (Nesterov-Accelerated Adaptive Moment Estimation)
+- Distributed and Parallel Optimization
+  - Data Parallelism
+  - Model Parallelism
+  - Hybrid Parallelism
+  - Asynchronous Optimization
+  - Federated Learning
+- Regularization-Integrated Optimization
+  - Objective Function with Regularization
+  - Types of Regularization Terms in Optimization
+  - Gradient-Based Optimization with Regularization
+- Bi-Level and Meta-Optimization
+  - Bi-Level Optimization
+  - Meta-Optimization
+- Optimization for Specific Architectures
+  - Convolutional Neural Networks (CNN)
+  - Recurrent Neural Networks (RNN)
+  - Transformers
+  - Graph Neural Networks (GNN)
+- Advanced Convergence Theories and Proofs
+  - Types of Convergence in Optimization
+  - Convergence Theories for Gradient-Based Methods
+  - Convergence in Non-Convex Optimization
+  - Convergence Proof Techniques
+ 
+## Information Theory
+- Definition and Concept
+- Core Measures in Information Theory
+  - Entropy
+  - Joint Entropy
+  - Conditional Entropy
+  - Mutual Information
+  - Kullback-Leibler Divergence
+  - Cross-Entropy
+  - Fisher Information
+  - Perplexity
+- Key Theorems and Principles
+  - Shannon’s Source Coding Theorem
+  - Mutual Information Principle
+  - Chain Rule for Entropy
+  - Jensen’s Inequality
+  - Data Processing Inequality
+  - Fano’s Inequality
+  - Minimum Description Length Principle
+- Advanced Topics
+  - Information Bottleneck Principle
+  - Variational Information Maximization
+  - Rate-Distortion Theory
+  - Maximum Entropy Models
+  - Differential Privacy
+  - Entropy Regularization in Optimal Transport
+  - Reinforcement Learning and Information Theory
+ 
+## Bayesian Methods and Probabilistic Models
+- Bayesian Inference
+- Probabilistic Models
+  - Gaussian Mixture Model (GMM)
+- Bayesian Regression and Classification
+- Markov Chain Monte Carlo (MCMC)
+  - Metropolis-Hastings Algorithms
+  - Gibbs Sampling
+  - Hamiltonian Monte Carlo (HMC)
+- Variational Inference
+- Bayesian Optimization
+
+## Control Theory
+- Definition and Concept
+- Types of Control Systems
+  - Open-Loop Control Systems
+  - Closed-Loop Control Systems
+  - Extensions of Closed-Loop Systems
+- Math Foundations
+  - State-Space Representation
+  - Transfer Function Analysis
+  - Stability Analysis
+  - Feedback Control Systems
+  - Optimal Control
+  - Lyapunov Stability Theory
+- Optimal Control Theory
+  - Problem Formulation
+    - System Dynamics
+    - Objective Function (Cost Function)
+    - Constraints
+  - Math Framework
+    - Pontryagin’s Maximum Principle (PMP)
+    - Dynamic Programming (DP)
+  - Classical Techniques
+    - Linear Quadratic Regulator (LQR)
+    - Model Predictive Control
+- Model Predictive Control (MPC)
+
+## Advanced Statistical Methods
+- Bayesian Statistics
+- Multivariate Analysis
+- Hypothesis and Confidence Intervals (Advanced)
+- Statistical Modeling Techniques
+- Resampling Techniques
+- Advanced Probability Distribution
+- Statistical Learning Theory (SLT)
+- Robust Statistical Methods
+- Causal Inference

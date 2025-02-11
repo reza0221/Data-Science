@@ -2,12 +2,56 @@
 ## Linear Algebra
 ### Basics
 - Scalars
+  - Basic Operations
+  - Operations Related to Vector
+  - Properties & Combinations
+  - Statistical Context
 - Vectors
+  - Basic Vector Arithmetic
+  - Vector Products
+  - Vector Properties & Transformations
+  - Vector-Based Geometric Interpretations
+  - Vector Operations in Higher Dimensions
 - Matrices
+  - Matrix Addition
+  - Matrix Subtraction
+  - Scalar Multiplication
+  - Matrix Multiplication (Dot Product)
+  - Element-wise Multiplication
+  - Matrix Transposition
+  - Matrix Determinant Calculation
+  - Matrix Inversion
+  - Matrix Rank Calculation
+  - Eigenvalues and Eigenvectors Calculation
 - Tensors
+  - Tensor Addition
+  - Tensor Subtraction
+  - Scalar Multiplication
+  - Tensor Multiplication (Dot Product & Matrix Product)
+  - Element-wise Multiplication
+  - Tensor Transposition (Permutation of Axes)
+  - Tensor Contraction (Reduction via Summation over Axes)
 - Vector Spaces
+  - Real Vector Space
+  - Complex Vector Space
+  - Euclidean Space (ℝⁿ Space)
+  - Function Space
+  - Polynomial Vector Space
+  - Matrix Vector Space
+  - Normed Vector Space
 - Linear Combinations and Span
+  - Basic Linear Combination
+  - Checking if a Vector is in the Span
+  - Span of Two Vectors
+  - Span of a Set of Vectors
+  - Basis and Dimension of a Span
 - Linear Transformations
+  - Scaling Transformation
+  - Rotation Transformation
+  - Reflection Transformation
+  - Shear Transformation
+  - Projection Transformation
+  - Identity Transformation
   
 ### Advanced
 - Dot Product and Cross Product

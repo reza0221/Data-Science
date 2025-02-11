@@ -55,12 +55,43 @@
   
 ### Advanced
 - Dot Product and Cross Product
+  - Dot Product
+    - Two-Dimensional Vectors
+    - Three-Dimensional Vectors
+    - Dot Product Application in Projection
+    - Angle Between Two Vectors Using Dot Product
+    - Work Done by a Force
+  - Cross Product
+    - Three-Dimensional Vectors
+    - Geometric Interpretation of Cross Product (Area of Parallelogram)
+    - Torque Calculation Using Cross Product
+    - Perpendicular Vectors and Cross Product
+    - Unit Vector Normal to Two Vectors Using Cross Product
 - Norms and Distances
+  - L1 Norm (Manhattan Distance or Taxicab Norm)
+  - L2 Norm (Euclidean Distance)
+  - Lp Norm (Generalized Form of Norms)
+  - Max Norm (Infinity Norm, Chebyshev Distance)
+  - Frobenius Norm (Matrix Norm)
+  - Cosine Similarity (Angular Distance in High Dimensions)
+  - Mahalanobis Distance (Statistical Distance)
 - Eigenvalues and Eigenvectors
+  - Basic Eigenvalue and Eigenvector Calculation
+  - Diagonalization Using Eigenvalues and Eigenvectors
+  - Symmetric Matrix Eigenvalues
+  - Singular Matrix Eigenvalue
+  - Eigenvalues in Markov Chains
+  - Eigenvalues and Eigenvectors in PCA
 - Matrix Decomposition
   - LU Decomposition
+    - General square matrix LU decomposition
+    - LU decomposition with partial pivoting
   - QR Decomposition
+    - QR decomposition for a full-rank square matrix
+    - QR decomposition for a rectangular matrix
   - SV Decomposition
+    - Full SVD for a square matrix
+    - SVD for a rectangular matrix
     
 ## Calculus
 ### Basic Concepts

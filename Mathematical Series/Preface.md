@@ -96,28 +96,100 @@
 ## Calculus
 ### Basic Concepts
 - Limits and Continuity
+  - Basic Limit Calculation
+  - One-Sided Limits
+  - Limit at Infinity
+  - Indeterminate Forms and L'Hôpital's Rule
+  - Squeeze Theorem
+  - Continuity at a Point
+  - Discontinuities
+  - Piecewise Function Continuity
 - Differentiation
+  - Basic Derivatives (Power Rule, Sum Rule, Constant Rule)
+  - Product Rule
+  - Quotient Rule
+  - Chain Rule
+  - Higher-Order Derivatives
+  - Implicit Differentiation
+  - Logarithmic Differentiation
+  - Partial Derivatives (for multivariable functions)
+  - Directional Derivatives
+  - Gradient and Hessian Matrix
 - Integration
-- Fundamental Theorem of Calculus
+  - Indefinite Integrals (Antiderivatives)
+  - Definite Integrals (With Limits)
+  - Integration by Substitution (u-Substitution)
+  - Integration by Parts
+  - Trigonometric Integrals (Using Trigonometric Identities)
+  - Improper Integrals (Infinite Limits or Discontinuous Functions)
+  - Double Integrals (Multivariable Integration)
+  - Triple Integrals (Extending to 3D Volume Computations)
+- Fundamental Theorem of Calculus (FTC)
+  - First Fundamental Theorem of Calculus (FTC-1)
+  - Second Fundamental Theorem of Calculus (FTC-2)
   
 ### Multivariable Calculus
 - Partial Derivatives
+  - First-Order Partial Derivative (∂f/∂x and ∂f/∂y)
+  - Second-Order Partial Derivative (∂²f/∂x², ∂²f/∂y², and mixed derivatives ∂²f/∂x∂y)
+  - Gradient (∇f) (Vector of first-order partial derivatives)
+  - Directional Derivative (Rate of change in a given direction)
+  - Jacobian Matrix (Matrix of first-order partial derivatives for multivariable functions)
+  - Hessian Matrix (Square matrix of second-order partial derivatives)
 - Gradient, Divergent, and Curl
+  - Gradient of a scalar function
+  - Divergence of a vector field in 2D
+  - Divergence of a vector field in 3D
+  - Curl of a vector field in 2D
+  - Curl of a vector field in 3D
 - Multiple Integrals
+  - Double Integrals (Cartesian Coordinates)
+  - Double Integrals (Polar Coordinates)
+  - Triple Integrals (Cartesian Coordinates)
+  - Triple Integrals (Cylindrical Coordinates)
+  - Triple Integrals (Spherical Coordinates)
+  - Change of Order in Double Integrals
+  - Surface Integrals
+  - Volume Integrals
 - Jacobian and Change of Variables
+  - Jacobian Determinant (2D Cartesian to Polar Coordinates)
+  - Jacobian Determinant (3D Cartesian to Cylindrical Coordinates)
+  - Jacobian Determinant (3D Cartesian to Spherical Coordinates)
+  - Transformation of Double Integrals using Jacobian
+  - Transformation of Triple Integrals using Jacobian
+  - Nonlinear Change of Variables in a Function
   
 ### Advanved Concepts
 - Vector Calculus
-  - Line Integrals
-  - Surface Integrals
+  - Gradient of a Scalar Field
+  - Divergence of a Vector Field
+  - Curl of a Vector Field
+  - Line Integral of a Scalar Function
+  - Line Integral of a Vector Field
+  - Conservative Vector Fields & Path Independence
+  - Green’s Theorem (Circulation and Flux Forms)
+  - Surface Integral of a Scalar Function
+  - Surface Integral of a Vector Field
+  - Stokes’ Theorem
+  - Divergence Theorem (Gauss’ Theorem)
 - Taylor Series and Approximation
-- Optimization Techniques
-  - Lagrange Multipliers
-  - Constrained Optimization
+  - Basic Taylor Series Expansion
+  - Maclaurin Series
+  - Taylor Approximation (Truncation of the Series)
+  - Error in Taylor Approximation (Lagrange Remainder Term)
+  - Taylor Series for Multivariable Functions
+  - Approximating Square Roots or Logarithms
 - Differential Equations
-  - Ordinary Differential Equations
-  - Partial Differenrial Equations
-  - Calculus of Variations
+  - First-Order Ordinary Differential Equations (ODEs)
+  - Second-Order Ordinary Differential Equations (ODEs)
+  - Higher-Order Ordinary Differential Equations
+  - Systems of Ordinary Differential Equations
+  - Partial Differential Equations (PDEs) – First Order
+  - Partial Differential Equations (PDEs) – Second Order
+  - Boundary Value Problems (BVPs)
+  - Laplace’s Equation and Harmonic Functions
+  - Fourier Series & Transform Solutions for PDEs
+  - Calculus of Variations (Euler-Lagrange Equation)
 
 ## Optimization
 ### Basic Concepts

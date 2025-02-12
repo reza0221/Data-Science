@@ -192,52 +192,75 @@
   - Calculus of Variations (Euler-Lagrange Equation)
 
 ## Optimization
-### Basic Concepts
-- Objective Functions
-- Convex and Non-Convex Functions
-- Global vs. Local Minima/Maxima
-- Gradient Descent (Basic)
+### Foundational Optimization Theory
+- Convex vs. Non-Convex Optimization
+  - Convex sets, functions, duality (Lagrange multipliers, Fenchel conjugates).
+  - Non-convex landscapes: saddle points, local minima, convergence guarantees.
+- Constrained Optimization
+  - Equality constraints (Lagrange multipliers).
+  - Inequality constraints (KKT conditions, duality gaps).
+  - Penalty methods, barrier functions (interior-point methods).
+- Global vs. Local Optimization
+  - Complexity theory (NP-hardness of non-convex problems).
+  - Basin hopping, multi-start methods.
+- Linear & Quadratic Programming
+  - Simplex method, duality in LP/QP.
+  - KKT conditions applied to LP/QP.
 
-### Constrained Optimization
-- Linear Programming (LP)
-- Quadratic Programming (QP)
-- Lagrange Multipliers (Detailed)
-- KKT Conditions (Karush-Kuhn-Tucker)
+### Gradient-Based Optimization
+- First-Order Methods
+  - Gradient Descent (GD), Stochastic GD (SGD), Mini-Batch GD.
+  - Convergence analysis: Lipschitz continuity, Robbins-Monro conditions.
+  - Online optimization (regret bounds).
+- Momentum & Acceleration
+  - Polyak’s Heavy Ball, Nesterov Accelerated Gradient (NAG).
+  - Theoretical acceleration rates (O(1/k²) vs. O(1/k)).
+- Adaptive Methods
+  - RMSProp, Adam, AMSGrad.
+  - Convergence issues in non-convex settings (e.g., Adam’s divergence).
+- Second-Order Methods
+  - Newton’s Method, Quasi-Newton (BFGS, L-BFGS).
+  - Hessian-free optimization, K-FAC for neural networks.
 
-### Gradient-Based Variants
-- Gradient Descents
-  - SGD (Stochastic Gradient Descent)
-  - Mini-Batch Gradient Descent
-  - RMSProp (Root Mean Square Propagation)
-- Momentum-Based Methods
-  - Momentum
-  - Nesterov Accelerated Gradient (NAG)
-- Hybrid Variant (Gradient Descents & Momentum-based Methods)
-  - Adam (Adaptive Moment Estimation)
-- Newton’s Method and Quasi-Newton Methods
-
-### Optimization for Machine Learning
-- Stochastic Optimization
-- Regularization Techniques
-  - L2 (Ridge Regularization)
-  - L1 (Lasso Regularization)
-  - Elastic Net
-  - Dropout
-  - Early Stopping
-- Hyperparameter Optimization
-  - Grid Search
-  - Random Search
-  - Bayesian Optimization
-  - Evolutionary Algorithms
+### Constrained & Regularized Optimization
+- Explicit Regularization
+  - L1/L2 (proximal operators, subgradient methods).
+  - Elastic Net (group sparsity).
+  - Duality in LASSO (link to KKT conditions).
+- Implicit Regularization
+  - SGD-induced regularization (e.g., margin maximization in SVMs).
+  - Early stopping as iterative regularization.
+- Distributed Optimization
+  - ADMM, consensus optimization, federated learning frameworks.
+- Proximal Algorithms
+  - Proximal gradient descent, splitting methods (e.g., Douglas-Rachford).
     
-### Advanced Optimization Topics
-- Conjugate Gradient Method
-- Trust-Region Methods
-- Simulated Annealing
-- Genetic Algorithms
-- Coordinate Descent
+### Global & Non-Convex Optimization
+- Heuristic Methods
+  - Simulated Annealing (Metropolis-Hastings criterion).
+  - Genetic Algorithms (crossover, mutation, selection operators).
+- Bayesian Optimization
+  - Gaussian processes, acquisition functions (EI, UCB)
+- Non-Convex Convergence
+  - Escaping saddle points (noise-injection theory), Lyapunov analysis.
   
-### Optimization in Deep Learning
-- Backpropagation and Gradient Flow
-- Batch Normalization and Learning Rate Schedules
-- Auto-Differentiation
+### Optimization in Machine Learning
+- Hyperparameter Optimization
+  - Grid/Random Search (combinatorial vs. continuous space).
+  - Bayesian Optimization (theoretical regret bounds).
+- Stochastic Optimization
+  - Variance reduction techniques (SAGA, SVRG).
+  - Mini-batch tradeoffs (bias-variance in gradients).
+- Deep Learning Optimization
+  - Backpropagation (computation graphs, Jacobian-vector products).
+  - Batch Normalization (smoothing the loss landscape).
+  - Gradient clipping (preventing explosion), initialization (Xavier/He).
+  - Auto-differentiation (forward vs. reverse mode, computational complexity).
+
+### Advanced Numerical Methods
+- Trust-Region Methods
+  - Trust-region vs. line search, convergence proofs.
+- Coordinate Descent
+  - Cyclic vs. stochastic selection, applications to LASSO.
+- Conjugate Gradient
+  - Krylov subspace methods, convergence in quadratic forms.

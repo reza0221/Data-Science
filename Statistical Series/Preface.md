@@ -1,17 +1,23 @@
 # Statistics for Data Science Roadmap
 ## Population & Sample
-- Standard Error
-- Confidence Level
-- Margin of Error
-- Confidence Interval
-- Critical Value
-- Sampling Methods
-	- Random
- 	- Stratified
-	- Cluster
-- Sampling Bias
-- Sampling Distributions
 - Law of Large Numbers
+- Sampling Distributions
+- Sampling Bias
+- Sampling Methods
+  - Random methods
+  - Stratified methods
+  - Cluster methods
+- Sample Size Determination
+  - Formula-based methods
+  - Simulation-based methods
+  - Pilot studies
+  - Expert judgement
+- Parameter Population
+  - Mean, Meadian, Mode
+  - Variance & Standard Deviation
+  - Confidence Level, Significance Level, Confidence Interval
+  - Standard Error & Margin or Error
+  - Citical Value
   
 ## Variable Types
 - Dependent Variable

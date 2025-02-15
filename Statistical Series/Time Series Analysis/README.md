@@ -163,3 +163,56 @@ H0, Ha → α → Compute Model Selection Criteria:
       - Bayesian Information Criterion (BIC)
       - Hannan-Quinn Information Criterion (HQC)
       → Decision
+
+## Generalized Autoregressive Conditional Heteroskedasticity (GARCH) Model Main Flow
+H0, Ha → α → Parameter Estimation → Model Diagnostics → Forecasting Future Volatility → Residual Analysis →
+Stability Analysis → Impulse Response Function → Information Criteria → Decision
+
+## Generalized Autoregressive Conditional Heteroskedasticity (GARCH) Model Derivative Flows
+### Flow 1: Parameter Estimation
+H0, Ha → α → Estimate GARCH Model Parameters using (Maximum Likelihood Estimation (MLE) & Quasi-MLE (QMLE)) → Decision
+
+### Flow 2: Model Diagnostics
+H0, Ha → α → Compute Model Diagnostics (Autocorrelation Function (ACF),  Ljung-Box Test (Check for White Noise in Residuals), Augmented Dickey-Fuller (ADF) Test (Check for Stationarity)
+Standard Error and Confidence Interval) → Decision
+
+### Flow 3: Forecasting Future Volatility
+H0, Ha → α → Compute Forecast (One-Step Ahead Forecasting, Multi-Step Ahead Forecasting, Prediction Interval, Forecast Errors & Confidence Interval) → Decision
+
+### Flow 4: Residual Analysis
+H0, Ha → α → Perform Residual Analysis (Durbin-Watson Test (Check for Autocorrelation in Residuals), Jarque-Bera Test (Check for Normality) → Decision
+
+### Flow 5: Stability Analysis
+H0, Ha → α → Compute Stability Metrics (Characteristic Roots (Check Model Stability), Mean Reversion Time (Time Taken to Return to Mean) → Decision
+
+### Flow 6: Impulse Response Function
+H0, Ha → α → Compute Response to Shocks (Impulse Response Function) → Decision
+
+### Flow 7: Information Criteria
+H0, Ha → α → Compute Model Selection Criteria (Akaike Information Criterion (AIC) & Bayesian Information Criterion (BIC)) → Decision
+
+## Main Calculation Flow of Vector Autoregression (VAR) Model
+H0, Ha → α → Parameter Estimation → Model Diagnostics → Forecasting Future Values → Residual Analysis → Stability Analysis → Impulse Response Function → Information Criteria → Decision
+
+## Derivative Calculation Flows of Vector Autoregression (VAR) Model
+### Flow 1: Parameter Estimation
+H0, Ha → α → Parameter Estimation (Ordinary Least Squares (OLS)) → Estimate Coefficients → Compute standard errors, t-statistics, and p-values → Decision
+
+### Flow 2: Model Diagnostics
+H0, Ha → α → Model Diagnostics (Autocorrelation Function (ACF), Ljung-Box Test (Check for serial correlation in residuals), Augmented Dickey-Fuller (ADF) Test (Check for stationarity),
+Standard Errors & Confidence Intervals) → Decision
+
+### Flow 3: Forecasting Future Values
+H0, Ha → α → Forecasting Future Values (One-Step Ahead Forecasting, Multi-Step Ahead Forecasting, Prediction Interval, Forecast Errors & Confidence Interval) → Decision
+
+### Flow 4: Residual Analysis
+H0, Ha → α → Residual Analysis (Durbin-Watson Test (Detect serial correlation in residuals) & Jarque-Bera Test (Check for normality of residuals)) → Decision
+
+### Flow 5: Stability Analysis
+H0, Ha → α → Stability Analysis (Characteristic Roots (Check stability condition) & Mean Reversion Time (Assess speed of return to equilibrium)) → Decision
+
+### Flow 6: Impulse Response Function
+H0, Ha → α → Impulse Response Function (Impulse Response Function (IRF)) → How variables react to shocks over time → Decision
+
+### Flow 7: Information Criteria
+H0, Ha → α → Information Criteria (Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), Hannan-Quinn Information Criterion (HQC)) → Decision

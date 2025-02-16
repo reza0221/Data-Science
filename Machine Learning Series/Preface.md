@@ -9,12 +9,15 @@
     - Regression Algorithms
       - Linear Regression
       - Polynomial Regression
-      - Ridge and Lasso Regression (Regularized Linear Models)
+      - Ridge (L2) and Lasso (L1) Regression (Regularized Linear Models)
       - Support Vector Regression
       - Decision Tree Regression
       - Random Forest Regression
       - K-Nearest Neighbors (KNN) Regression
-      - Gradient Boosting Machine (GBM) and XGBoost
+      - Gradient Boosting Machine (GBM) and XGBoost Regression
+      - Neural Network Regression
+      - Bayesian Regression
+      - Quantile Regression
     - Classification Algorithms
       - Logistic Regression
       - Decision Tree Classification

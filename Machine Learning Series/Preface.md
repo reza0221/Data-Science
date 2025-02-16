@@ -1,7 +1,6 @@
 # Machine Learning
 ## Fundamentals of Machine Learning
 ### Overview of Machine Learning
-### Brief History and Evolution
 ### Categories of Machine Learning
 - Supervised Learning
   - Definition and Concept

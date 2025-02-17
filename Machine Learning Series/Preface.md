@@ -26,8 +26,12 @@
       - K-Nearest Neighbors (KNN) Classification
       - Naïve Bayes Classification
       - Neural Networks (Multilayer Perceptron)
-      - Gradient Boosting and XGBoost (for Classification)
+      - Gradient Boosting, XGBoost, LightGBM, CatBoost (for Classification)
       - AdaBoost
+      - Linear Discriminant Analysis (LDA)
+      - Quadratic Discriminant Analysis (QDA)
+      - Rule-Based Classifiers
+      - Probabilistic Graphical Models
     - Ensemble Learning
       - Bagging (Bootstrap Aggregating)
       - Boosting

@@ -26,18 +26,19 @@
       - K-Nearest Neighbors (KNN) Classification
       - Naïve Bayes Classification
       - Neural Networks (Multilayer Perceptron)
-      - Gradient Boosting, XGBoost, LightGBM, CatBoost (for Classification)
+      - Gradient Boosting Machine (GBM), XGBoost, LightGBM, CatBoost (for Classification)
       - AdaBoost
       - Linear Discriminant Analysis (LDA)
       - Quadratic Discriminant Analysis (QDA)
-      - Rule-Based Classifiers
-      - Probabilistic Graphical Models
-    - Ensemble Learning
+      - Rule-Based Classifiers (RIPPER (Repeated Incremental Pruning to Produce Error Reduction))
+    - Ensemble Methods
       - Bagging (Bootstrap Aggregating)
       - Boosting
       - Stacking (Stacked Generalization)
       - Voting and Averaging
-    - Stochastic Gradient Descent (SGD)
+      - Bucket of Models
+      - Cascading
+      - Blending
   - Mathematical Foundation of Supervised Learning
     - Core Principles
       - Statistical Learning Theory
@@ -56,10 +57,28 @@
       - K-Means Clustering
       - Hierarchical Clustering
       - DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+      - Gaussian Mixture Models (GMM)
+      - BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies)
+      - Mean Shift
     - Dimensionality Reduction Algorithms
       - Principal Component Analysis (PCA)
       - Singular Value Decomposition (SVD)
       - t-SNE (t-Distributed Stochastic Neighbor Embedding)
+      - Non-negative Matrix Factorization (NMF)
+    - Association Rule Mining
+      - Apriori Algorithm
+      - Eclat Algorithm
+      - FP-Growth Algorithm
+    - Neural Network-Based Methods
+      - Restricted Boltzmann Machines (RBM)
+      - Stacked Boltzmann Machines
+      - Autoencoders
+      - Variational Autoencoders (VAE)
+      - Generative Adversarial Networks (GANs)
+    - Self-Supervised Learning
+      - Contrastive Learning
+      - Masked Language Modeling
+      - RotNet
   - Mathematical Foundations
     - Distance Metrics
     - Eigenvalues and Eigenvectors

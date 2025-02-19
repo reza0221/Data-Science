@@ -264,18 +264,30 @@
 - Definition and Concept
 - Types of Neural Networks
   - Feedforward Neural Networks (FNN)
+    - Standard FNN: Fully connected layers.
+    - Deep Feedforward Networks: Multi-Layer Perceptrons (MLP).
   - Convolutional Neural Networks (CNN)
+    - Standard CNN
+    - ResNet
+    - U-Net
+    - Inception Networks
+    - Vision Transformers (ViT)
   - Recurrent Neural Networks (RNN)
     - Vanilla RNN
     - Long Short-Term Memory (LSTM)
-    - Gated Recurrent Unit (GTU)
+    - Gated Recurrent Unit (GRU)
     - Bidirectional RNN
-  - Generative Adversarial Networks (GNN)
+  - Generative Adversarial Networks (GAN)
+    - Standard GAN
+    - CycleGAN
+    - StyleGAN
   - Autoencoders (AE)
     - Sparse Autoencoders
     - Denoising Autoencoders
     - Variational Autoencoders (VAE)
+    - Contractive Autoencoders
   - Transformer Networks
+    - Standard Transformer (Self-attention mechanism)
   - Radial Basis Function Networks (RBFN)
   - Spiking Neural Networks (SNN)
 - Components of Neural Networks

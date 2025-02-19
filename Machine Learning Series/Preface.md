@@ -91,31 +91,49 @@
       - Model-Free
         - Value-Based Methods
           - Q-Learning
+          - Deep Q-Networks (DQN) + Variants (Double DQN, Dueling DQN)
           - SARSA (State-Action-Reward-State-Action)
         - Policy-Based Methods
           - REINFORCE (Monte Carlo Policy Gradient)
+          - Trust Region Policy Optimization (TRPO)
         - Actor-Critic Methods
           - Advantage Actor-Critic (A2C)
           - Asynchronous Advantage Actor-Critic (A3C)
           - Deep Deterministic Policy Gradient (DDPG)
+          - Twin Delayed DDPG (TD3)
           - Proximal Policy Optimization (PPO)
+          - Soft Actor-Critic (SAC)
+          - MuZero
       - Model-Based
         - Planning-Based Methods
-          - Model Predictive Control MPC)
+          - Model Predictive Control (MPC)
           - Monte Carlo Tree Search (MCTS)
+          - Value Iteration Networks (VIN)
         - Hybrid Methods
           - Dyna-Q
+          - Model-Based Policy Optimization (MBPO)
           - Model-Augmented Actor-Critic (MAAC)
+          - MuZero
     - On-Policy vs Off-Policy
       - On-Policy
         - SARSA (State-Action-Reward-State-Action)
+        - Advantage Actor-Critic (A2C)/Asynchronous Advantage Actor-Critic (A3C)
+        - Trust Region Policy Optimization (TRPO)
+        - Proximal Policy Optimization (PPO)
       - Off-Policy
         - Q-Learning
+        - Deep Q-Networks (DQN)
+        - Deep Deterministic Policy Gradient (DDPG)
+        - Twin Delayed DDPG (TD3)
+        - Soft Actor-Critic (SAC)
     - Deterministic vs Stochastic Policies
       - Deterministic Policies
         - Deep Deterministic Policy Gradient (DDPG)
+        - Twin Delayed DDPG (TD3)
       - Stochastic Policies
         - REINFORCE (Monte Carlo Policy Gradient)
+        - Soft Actor-Critic (SAC)
+        - Proximal Policy Optimization (PPO)
  - Mathematical Foundations
    - Markov Decision Process (MDP)
    - Q-Function and Bellman Equation

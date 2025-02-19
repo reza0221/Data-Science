@@ -1,1 +1,1 @@
-A collection of Workflow Diagrams of Supervised Learning Algorithms.
+A collection of Workflow Diagrams for Supervised Learning Algorithms.

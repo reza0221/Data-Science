@@ -77,8 +77,10 @@
       - Generative Adversarial Networks (GANs)
     - Self-Supervised Learning
       - Contrastive Learning
-      - Masked Language Modeling
+      - Masked Language Modeling (MLM)
       - RotNet
+      - mSLAM
+      - SimCSE
   - Mathematical Foundations
     - Distance Metrics
     - Eigenvalues and Eigenvectors
@@ -103,7 +105,6 @@
           - Twin Delayed DDPG (TD3)
           - Proximal Policy Optimization (PPO)
           - Soft Actor-Critic (SAC)
-          - MuZero
       - Model-Based
         - Planning-Based Methods
           - Model Predictive Control (MPC)

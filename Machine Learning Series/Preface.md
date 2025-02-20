@@ -293,6 +293,12 @@
     - Vision Transformer (ViT)
   - Radial Basis Function Networks (RBFN)
   - Spiking Neural Networks (SNN)
+  - Graph Neural Networks (GNN)
+    - Graph Convolutional Networks (GCN)
+    - Graph Attention Networks (GAT)
+    - Message Passing Neural Networks (MPNN)
+  - Capsule Networks
+    - Dynamic Routing Between Capsules (DRBC)
 - Components of Neural Networks
   - Neurons
   - Layers

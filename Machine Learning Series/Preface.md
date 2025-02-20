@@ -288,6 +288,9 @@
     - Contractive Autoencoders
   - Transformer Networks
     - Standard Transformer (Self-attention mechanism)
+    - BERT (Bidirectional Encoder Representations)
+    - GPT (Generative Pre-trained Transformer)
+    - Vision Transformer (ViT)
   - Radial Basis Function Networks (RBFN)
   - Spiking Neural Networks (SNN)
 - Components of Neural Networks

@@ -1,0 +1,102 @@
+services:
+  zookeeper:
+    image: bitnami/zookeeper:3.8.0
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+      - ZOOKEEPER_CLIENT_PORT=2181
+      - ZOOKEEPER_TICK_TIME=3000 # Increase tick time (default 2000 ms)
+      - ZOOKEEPER_MAX_CLIENT_CNXNS=200 # Increase max client connections
+      - ZOOKEEPER_SESSION_TIMEOUT=20000 # New: Increase session timeout to 20 seconds
+      - ZOOKEEPER_INIT_LIMIT=10 # New: Connection initialization wait (tickTime multiplier)
+      - ZOOKEEPER_SYNC_LIMIT=5 # New: Synchronization wait (tickTime multiplier)
+    volumes:
+      - zookeeper_data:/bitnami/zookeeper/data
+    networks:
+      - kafka-network
+    restart: unless-stopped
+
+  kafka:
+    image: bitnami/kafka:3.1.0
+    container_name: kafka
+    ports:
+      - "9092:9092" #for localhost:9093 & kafka:9092 access inside container
+      - "9093:9093" #for localhost:9093 outside container
+    environment:
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_CFG_MESSAGE_MAX_BYTES=200000000 # Increase max message size (200 MB)
+      - KAFKA_CFG_REPLICA_FETCH_MAX_BYTES=200000000 # Adjust replica fetch size
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=false
+      - KAFKA_CFG_LOG_RETENTION_HOURS=6
+      - KAFKA_CFG_NUM_PARTITIONS=1
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT_HOST:PLAINTEXT,PLAINTEXT_DOCKER:PLAINTEXT
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT_HOST://localhost:9093,PLAINTEXT_DOCKER://kafka:9092
+      - KAFKA_CFG_LISTENERS=PLAINTEXT_HOST://0.0.0.0:9093,PLAINTEXT_DOCKER://0.0.0.0:9092
+      - KAFKA_CFG_BROKER_ID=1
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT_DOCKER
+      - KAFKA_CFG_MESSAGE_MAX_BYTES=209715200 # 200 MB (increase as needed)
+      - KAFKA_CFG_REPLICA_FETCH_MAX_BYTES=209715200 # 200 MB
+      - KAFKA_CFG_FETCH_MAX_BYTES=209715200 # 200 MB
+    volumes:
+      - kafka_data:/bitnami/kafka
+    depends_on:
+      - zookeeper
+    networks:
+      - kafka-network
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=testdb
+      - MYSQL_USER=testuser
+      - MYSQL_PASSWORD=testpassword
+    volumes:
+      - ./config/mysql/my.cnf:/etc/mysql/my.cnf
+      - mysql_data:/var/lib/mysql
+    networks:
+      - kafka-network
+    restart: unless-stopped
+
+  kafka_connect:
+    image: debezium/connect:2.4
+    container_name: kafka_connect
+    ports:
+      - "8083:8083"
+    environment:
+      - BOOTSTRAP_SERVERS=kafka:9092
+      - CONNECT_REST_PORT=8083
+      - CONNECT_GROUP_ID=1
+      - CONFIG_STORAGE_TOPIC=my_connect_configs
+      - OFFSET_STORAGE_TOPIC=my_connect_offsets
+      - STATUS_STORAGE_TOPIC=my_connect_statuses
+      - CONNECT_KEY_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+      - CONNECT_VALUE_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+      - CONNECT_INTERNAL_KEY_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+      - CONNECT_INTERNAL_VALUE_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+      - CONNECT_PLUGIN_PATH=/debezium,/usr/share/java
+      - KAFKA_HEAP_OPTS=-Xms256m -Xmx512m # Limited memory allocation for lightweight setup
+      - FETCH_MAX_BYTES=209715200
+    depends_on:
+      - kafka
+    networks:
+      - kafka-network
+    restart: unless-stopped
+    volumes:
+      - C:/debezium/debezium-connector-mysql:/debezium
+
+networks:
+  kafka-network:
+    driver: bridge
+
+volumes:
+  zookeeper_data:
+  kafka_data:
+  mysql_data:

@@ -212,11 +212,6 @@ MODIFY COLUMN product_id INT NOT NULL;
 ALTER TABLE products
 MODIFY COLUMN stock INT NOT NULL DEFAULT 0;
 
--- Standardize date fields to use DATETIME (example for products.created_at)
-ALTER TABLE products
-MODIFY COLUMN created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-MODIFY COLUMN updated_at DATETIME DEFAULT CURRENT_TIMESTAMP;
-
 -- Update transaction_records.transaction_id to VARCHAR(100)
 ALTER TABLE transaction_records
 MODIFY transaction_id VARCHAR(100);

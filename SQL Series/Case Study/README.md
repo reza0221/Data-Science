@@ -4,5 +4,5 @@ Description of files in this Case Study folder:
 - case1_ecommerce.sql is a step by step database creation from scratch for a simple database.
 - checklist_before_creating_stored_procedure.sql contains a list of checks for a database before creating a stored procedure.
 - ecommerce.ipynb uses sql alchemy to load the mysql database for further analysis.
-- stored_procedure.msql contains a stored procedure to update payments.amount where previously we updated it unitially for several columns in several tables before calling the stored procedure.
+- stored_procedure.msql contains a stored procedure to update payments.amount where previously we updated it initially for several columns in several tables before calling the stored procedure.
 - ecommerce.mwb contains the EER Diagram.
